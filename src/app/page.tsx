@@ -1,5 +1,6 @@
 import * as ReactAriaDialog from "@/components/ReactAriaDialog";
 import * as RadixDialog from "@/components/RadixDialog";
+import { SimpleDialog } from "@/components/SimpleDialog";
 
 export default function Home() {
   return (
@@ -30,6 +31,14 @@ export default function Home() {
           <input placeholder="Focus Me" />
         </RadixDialog.DialogContent>
       </RadixDialog.Dialog>
+      <SimpleDialog>
+        <div
+          style={{
+            height: "1000px",
+          }}
+        ></div>
+        <input placeholder="Focus Me" />
+      </SimpleDialog>
     </div>
   );
 }
